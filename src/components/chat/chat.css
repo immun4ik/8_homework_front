@@ -1,0 +1,67 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  flex-grow: 1;
+
+  padding: 10px;
+  border-left: 1px solid black;
+  border-radius: 10px;
+
+  background-color: aqua;
+}
+
+.messages {
+  padding-right: 20px;
+  margin-bottom: 10px;
+
+  max-height: calc(100% - 60px);
+  overflow-y: scroll;
+}
+
+.message {
+  width: 70%;
+}
+
+.message_right {
+  margin-left: auto;
+  text-align: end;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.message__info {
+  margin-bottom: 10px;
+
+  color: black;
+}
+
+.message__info_you {
+  color: red;
+}
+
+.chat__form {
+  display: flex;
+  gap: 15px;
+}
+
+.chat__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.chat__btn {
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+
+  background: url("../../img/paper-plane.svg") rgb(0, 156, 0) center / 25px  no-repeat ;
+}
